@@ -7,9 +7,14 @@
         min-height: 100%;
         flex-direction: column;
         flex: 1;
-
+        // position: absolute;
+        // width: 100%;
+        // bottom: 0px;
+        // .index-container {
+        //     margin-top: 70px;
+        // }
         .main-content {
-            flex: 1;
+            flex: 1;      
         }
     }
 }

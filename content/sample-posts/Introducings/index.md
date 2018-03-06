@@ -1,5 +1,5 @@
 ---
-title: "Introducing Gatsby Material Starter"
+title: "Introducings"
 cover: "/logos/logo-1024.png"
 category: "gatsby"
 tags:

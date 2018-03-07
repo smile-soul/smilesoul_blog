@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Button from "react-md/lib/Buttons";
 import Link from "gatsby-link";
-import UserLinks from "../UserLinks/UserLinks";
+import Dock from "react-osx-dock";
 import config from "../../../data/SiteConfig";
 import "./Footer.scss";
 
@@ -10,19 +10,22 @@ class Footer extends Component {
     const url = config.siteRss;
     const { userLinks } = this.props;
     const fixedFooter = config.fixedFooter;
-    
+    const DockerItem = userLinks.map((link, index) => {
+      return (<Dock.Item key={index}>
+          <Button
+            key={link.label}
+            iconClassName={link.iconClassName}
+            href={link.url}
+          >
+            {link.label}
+          </Button>
+      </Dock.Item>)
+    })
     return (
-      <footer className={fixedFooter ? "footer footer-fixed" : "footer"}>
-        {/* {userLinks ? <UserLinks config={config} labeled /> : null}
-        <div className="notice-container">
-          <div className="rss">
-            <Link to={url}>
-              <Button flat secondary iconClassName="fa fa-rss">
-                Subscribe
-              </Button>
-            </Link>
-          </div>
-        </div> */}
+      <footer>
+      {/* <Dock width={800} magnification={2} magnifyDirection="up">
+          {DockerItem}
+      </Dock> */}
       </footer>
     );
   }

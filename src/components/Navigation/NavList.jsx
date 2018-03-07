@@ -11,6 +11,12 @@ function GetNavList(config) {
       to: "/"
     },
     {
+      primaryText: "About",
+      leftIcon: <FontIcon>person</FontIcon>,
+      component: Link,
+      to: "/about/"
+    },
+    {
       divider: true
     }
   ];
@@ -28,12 +34,7 @@ function GetNavList(config) {
 
   NavList.push({ divider: true });
 
-  NavList.push({
-    primaryText: "About",
-    leftIcon: <FontIcon>person</FontIcon>,
-    component: Link,
-    to: "/about/"
-  });
+  
   return NavList;
 }
 export default GetNavList;

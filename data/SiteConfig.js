@@ -22,7 +22,7 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-material-starter",
+      url: "https://github.com/smile-soul",
       iconClassName: "fa fa-github"
     },
     {
@@ -31,8 +31,18 @@ module.exports = {
       iconClassName: "fa fa-twitter"
     },
     {
+      label: "Douban",
+      url: "https://www.douban.com/people/smilesoul/",
+      iconClassName: "fa fa-book"
+    },
+    {
+      label: "Linkedin",
+      url: "https://www.douban.com/people/smilesoul/",
+      iconClassName: "fa fa-linkedin"
+    },
+    {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
+      url: "mailto:smile-soul@foxmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],

@@ -1,7 +1,6 @@
 const path = require("path");
 const _ = require("lodash");
 const webpackLodashPlugin = require("lodash-webpack-plugin");
-
 const postNodes = [];
 
 function addSiblingNodes(createNodeField) {
@@ -159,5 +158,11 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 exports.modifyWebpackConfig = ({ config, stage }) => {
   if (stage === "build-javascript") {
     config.plugin("Lodash", webpackLodashPlugin, null);
+  }
+  if (stage === "build-html") {
+    config.loader("null", {
+      test: /[jparticles,gitment]/,
+      loader: "null-loader",
+    });
   }
 };

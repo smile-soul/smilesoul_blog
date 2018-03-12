@@ -31,6 +31,7 @@
     "jparticles": "^2.0.1",
     "lodash": "^4.17.5",
     "lodash-webpack-plugin": "^0.11.4",
+    "particles.js": "^2.0.0",
     "react": "^15.6.1",
     "react-disqus-comments": "^1.1.1",
     "react-dom": "^15.6.1",

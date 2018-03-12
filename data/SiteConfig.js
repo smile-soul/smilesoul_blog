@@ -1,5 +1,5 @@
 module.exports = {
-  blogPostDir: "sample-posts", // The name of directory that contains your posts.
+  blogPostDir: "blog", // The name of directory that contains your posts.
   siteTitle: "Smilesoul", // Site title.
   siteTitleAlt: "Smilesoul blog", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
@@ -27,17 +27,17 @@ module.exports = {
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
+      url: "https://twitter.com/LtySmileSoul",
       iconClassName: "fa fa-twitter"
     },
     {
       label: "Douban",
-      url: "https://www.douban.com/people/smilesoul/",
+      url: "https://www.douban.com/people/smilesoul",
       iconClassName: "fa fa-book"
     },
     {
       label: "Linkedin",
-      url: "https://www.douban.com/people/smilesoul/",
+      url: "https://www.douban.com/people/smilesoul",
       iconClassName: "fa fa-linkedin"
     },
     {

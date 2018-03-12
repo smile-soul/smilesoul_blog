@@ -47,7 +47,7 @@ class Toolbar extends Component {
     return (
       <div className="toolbar-actions">
         <div className="userlinks-container">
-          {login}
+          {/* {login} */}
           {/* <UserLinks config={config} /> */}
         </div>
       </div>

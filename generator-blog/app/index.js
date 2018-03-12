@@ -41,7 +41,7 @@ module.exports = class extends Generator {
         type: 'list',
         name: 'category',
         message: 'Please choose category',
-        choices: ['test']
+        choices: ['Web', 'Devops', 'Tool']
       },
       {
         type: 'input',

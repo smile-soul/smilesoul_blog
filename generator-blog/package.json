@@ -10,6 +10,12 @@
   ],
   "dependencies": {
     "yeoman-generator": "^2.0.3",
-    "yosay": "^2.0.1"
-  }
+    "yosay": "^2.0.1",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
